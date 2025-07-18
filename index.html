@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SevenxFootball - Suas Notícias de Futebol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .brand-gradient {
+            background: linear-gradient(90deg, #3b82f6, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="https://yt3.googleusercontent.com/S8fM7r60t28xYq8qDV1XEDJ8UUR78T6khFFzN1Srqh9pBwHzg8nH2Hl1urTSlX8r6qEe5cV-8A=s160-c-k-c0x00ffffff-no-rj" alt="Logo SevenxFootball" class="h-10 w-auto rounded-full">
+                <span class="text-2xl font-bold tracking-tight">Seven<span class="brand-gradient">x</span>Football</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#noticias" class="text-gray-300 hover:text-white transition duration-300">Últimas Notícias</a>
+                <a href="#resultados" class="text-gray-300 hover:text-white transition duration-300">Resultados</a>
+                <a href="#contato" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Contato</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#noticias" class="block py-2 text-gray-300 hover:text-white">Últimas Notícias</a>
+            <a href="#resultados" class="block py-2 text-gray-300 hover:text-white">Resultados</a>
+            <a href="#contato" class="block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-center">Contato</a>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <main>
+        <section class="hero-bg h-[60vh] flex items-center justify-center text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider">O Futebol Vive Aqui</h1>
+                <p class="text-lg md:text-2xl font-light mt-4 text-gray-200">7 dias por semana, a informação que importa no mundo da bola.</p>
+                <a href="#noticias" class="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-lg">Ver Notícias</a>
+            </div>
+        </section>
+
+        <!-- Seção de Últimas Notícias -->
+        <section id="noticias" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Últimas <span class="brand-gradient">Notícias</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Notícia 1 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-xl transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://yt3.ggpht.com/eB5WTiK0lb81TKk4fbaVqHJzlofb22s0fOocoEz_vt1Mu6XyBlPC60Y-zHPKfgejSJl39l26Z6y9hQ=s640-rw-nd-v1" alt="Imagem da transferência de Weverson para o Fortaleza" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a202c/ffffff?text=SevenxFootball';">
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-blue-400">MERCADO DA BOLA</span>
+                            <h3 class="text-xl font-bold mt-2 mb-3">Oficial: Weverson é o novo reforço do Fortaleza!</h3>
+                            <p class="text-gray-400 text-sm mb-4">O lateral-esquerdo chega do Arouca, de Portugal, para reforçar o Leão do Pici na temporada.</p>
+                            <a href="#" class="font-semibold text-orange-500 hover:text-orange-400">Leia Mais &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Notícia 2 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-xl transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://yt3.ggpht.com/Vmqcnk7Lhc6EMa5G4VTevmWFN0jPBgKMR5uIgR0sz-QoeJDhwhq4x5jQuXpbFI4mxJXS4OFfgGID=s640-c-fcrop64=1,00000000ffffffff-rw-nd-v1" alt="Imagem do jogo entre Atlético-GO e Criciúma" class="w-full h-56 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a202c/ffffff?text=SevenxFootball';">
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-blue-400">SÉRIE B</span>
+                            <h3 class="text-xl font-bold mt-2 mb-3">Duelo direto no meio da tabela da Série B</h3>
+                            <p class="text-gray-400 text-sm mb-4">Atlético-GO recebe o Criciúma em Goiânia buscando subir na classificação e se aproximar do G4.</p>
+                            <a href="#" class="font-semibold text-orange-500 hover:text-orange-400">Leia Mais &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Resultados -->
+        <section id="resultados" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Próximos <span class="brand-gradient">Jogos</span></h2>
+                <div class="space-y-4 max-w-3xl mx-auto">
+                     <!-- Jogo 1 -->
+                    <div class="bg-gray-900 p-4 rounded-lg flex items-center justify-between shadow-lg">
+                        <span class="text-xs text-gray-400">Série B</span>
+                        <div class="flex items-center space-x-4 text-sm md:text-base font-semibold grow justify-center">
+                            <span class="text-right w-2/5">Atlético-GO</span>
+                            <img src="https://ssl.gstatic.com/onebox/media/sports/logos/1VvK322i6tWXo6oD2C-21g_48x48.png" alt="Logo Atlético-GO" class="h-6 w-6 md:h-8 md:w-8" onerror="this.style.display='none'">
+                            <span class="text-gray-400">vs</span>
+                            <img src="https://ssl.gstatic.com/onebox/media/sports/logos/meY3v22lBEbES132o4q4sg_48x48.png" alt="Logo Criciúma" class="h-6 w-6 md:h-8 md:w-8" onerror="this.style.display='none'">
+                            <span class="text-left w-2/5">Criciúma</span>
+                        </div>
+                        <span class="text-xs text-gray-400 text-right">Hoje, 19:00</span>
+                    </div>
+                    <!-- Jogo 2 -->
+                    <div class="bg-gray-900 p-4 rounded-lg flex items-center justify-between shadow-lg">
+                        <span class="text-xs text-gray-400">Brasileirão</span>
+                        <div class="flex items-center space-x-4 text-sm md:text-base font-semibold grow justify-center">
+                            <span class="text-right w-2/5">Flamengo</span>
+                             <img src="https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuXhOTssA_48x48.png" alt="Logo Flamengo" class="h-6 w-6 md:h-8 md:w-8" onerror="this.style.display='none'">
+                            <span class="text-gray-400">vs</span>
+                             <img src="https://ssl.gstatic.com/onebox/media/sports/logos/fCMf4_30f5jLThd-wAbYmg_48x48.png" alt="Logo Fluminense" class="h-6 w-6 md:h-8 md:w-8" onerror="this.style.display='none'">
+                            <span class="text-left w-2/5">Fluminense</span>
+                        </div>
+                        <span class="text-xs text-gray-400 text-right">Dom, 16:00</span>
+                    </div>
+                     <!-- Jogo 3 -->
+                    <div class="bg-gray-900 p-4 rounded-lg flex items-center justify-between shadow-lg">
+                        <span class="text-xs text-gray-400">Brasileirão</span>
+                        <div class="flex items-center space-x-4 text-sm md:text-base font-semibold grow justify-center">
+                            <span class="text-right w-2/5">Palmeiras</span>
+                             <img src="https://ssl.gstatic.com/onebox/media/sports/logos/7spHA_8T2_py9n6t7iTW0g_48x48.png" alt="Logo Palmeiras" class="h-6 w-6 md:h-8 md:w-8" onerror="this.style.display='none'">
+                            <span class="text-gray-400">vs</span>
+                             <img src="https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-HsRg_d4hWecNQ1A_48x48.png" alt="Logo Corinthians" class="h-6 w-6 md:h-8 md:w-8" onerror="this.style.display='none'">
+                            <span class="text-left w-2/5">Corinthians</span>
+                        </div>
+                        <span class="text-xs text-gray-400 text-right">Dom, 18:30</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Contato -->
+        <section id="contato" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 max-w-lg text-center">
+                 <h2 class="text-3xl font-bold text-center mb-4">Entre em <span class="brand-gradient">Contato</span></h2>
+                 <p class="text-gray-400 mb-8">Tem alguma sugestão, dúvida ou proposta? Fale conosco!</p>
+                 <form action="#" method="POST" class="space-y-6">
+                     <input type="text" placeholder="Seu Nome" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                     <input type="email" placeholder="Seu E-mail" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                     <textarea placeholder="Sua Mensagem" rows="5" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
+                     <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Enviar Mensagem</button>
+                 </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm">&copy; 2025 SevenxFootball. Todos os direitos reservados.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.143 0-3.505.012-4.73.068-2.694.124-3.998 1.424-4.122 4.122-.056 1.225-.067 1.586-.067 4.73s.011 3.505.067 4.73c.124 2.698 1.428 3.998 4.122 4.122 1.225.056 1.586.068 4.73.068s3.505-.012 4.73-.068c2.698-.124 3.998-1.424 4.122-4.122.056-1.225.067-1.586.067-4.73s-.011-3.505-.067-4.73c-.124-2.698-1.424-3.998-4.122-4.122-1.225-.056-1.586-.068-4.73-.068zm0 3.064c-2.883 0-5.206 2.323-5.206 5.206s2.323 5.206 5.206 5.206 5.206-2.323 5.206-5.206-2.323-5.206-5.206-5.206zm0 8.611c-1.873 0-3.405-1.532-3.405-3.405s1.532-3.405 3.405-3.405 3.405 1.532 3.405 3.405-1.532 3.405-3.405 3.405zm4.92-6.918c-.783 0-1.418.635-1.418 1.418s.635 1.418 1.418 1.418 1.418-.635 1.418-1.418-.635-1.418-1.418-1.418z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.185A2.385 2.385 0 0 0 17.998.98a2.384 2.384 0 0 0-1.618.616l-4.138 4.138a.563.563 0 0 0-.162.408v7.392a.563.563 0 0 0 .162.408l4.138 4.138c.894.894 2.34.894 3.234 0l1.618-1.618a2.384 2.384 0 0 0 .616-1.618 2.385 2.385 0 0 0-.98-1.797L18.65 12l2.167-2.168a2.385 2.385 0 0 0 .38-1.982zM4.385 3.185A2.385 2.385 0 0 0 2.768.98a2.384 2.384 0 0 0-1.618.616L-.012 5.734a2.384 2.384 0 0 0-.616 1.618c0 .67.273 1.285.717 1.73l2.168 2.167L.087 13.417a2.385 2.385 0 0 0-.38 1.982c.24 1.11 1.23 1.936 2.34 1.936a2.384 2.384 0 0 0 1.618-.616l4.138-4.138a.563.563 0 0 0 .162-.408V4.809a.563.563 0 0 0-.162-.408L4.385 3.185z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para menu mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fechar menu ao clicar em um link
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
